@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * A domain class representing a single transaction.
- * @param jens dietrich
+ * @author matt romanes
  */
 public class Purchase {
 

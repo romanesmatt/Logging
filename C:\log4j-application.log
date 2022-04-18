@@ -1,0 +1,28 @@
+2022-04-18 20:32:35 INFO  MergeTransactions:76 - import data from transactions1.csv
+2022-04-18 20:32:35 DEBUG MergeTransactions:91 - imported transaction Purchase [retailer=Pack and Save, amount=188.0, date=Sun Jun 03 00:00:00 NZST 2018]
+2022-04-18 20:32:35 DEBUG MergeTransactions:91 - imported transaction Purchase [retailer=Harvey Norman, amount=20.0, date=Tue Jun 12 00:00:00 NZST 2018]
+2022-04-18 20:32:35 DEBUG MergeTransactions:91 - imported transaction Purchase [retailer=BP, amount=90.0, date=Fri Jun 15 00:00:00 NZST 2018]
+2022-04-18 20:32:35 INFO  MergeTransactions:76 - import data from transactions2.csv
+2022-04-18 20:32:35 DEBUG MergeTransactions:91 - imported transaction Purchase [retailer=Pack and Save, amount=230.0, date=Tue May 01 00:00:00 NZST 2018]
+2022-04-18 20:32:35 DEBUG MergeTransactions:91 - imported transaction Purchase [retailer=Briscoes, amount=10.0, date=Thu May 03 00:00:00 NZST 2018]
+2022-04-18 20:32:35 DEBUG MergeTransactions:91 - imported transaction Purchase [retailer=Warehouse, amount=20.0, date=Fri May 04 00:00:00 NZST 2018]
+2022-04-18 20:32:35 DEBUG MergeTransactions:91 - imported transaction Purchase [retailer=Pack and Save, amount=240.0, date=Sun May 06 00:00:00 NZST 2018]
+2022-04-18 20:32:35 INFO  MergeTransactions:76 - import data from transactions3.csv
+2022-04-18 20:32:35 DEBUG MergeTransactions:91 - imported transaction Purchase [retailer=Wet Pets, amount=42.0, date=Sun May 13 00:00:00 NZST 2018]
+2022-04-18 20:32:35 ERROR MergeTransactions:111 - cannot parse date from string - please check whether syntax is correct: Animates,4,13/5/2018
+java.text.ParseException: Unparseable date: "13/5/2018"
+	at java.text.DateFormat.parse(DateFormat.java:366)
+	at nz.ac.vuw.swen301.tuts.log4j.MergeTransactions.readData(MergeTransactions.java:85)
+	at nz.ac.vuw.swen301.tuts.log4j.MergeTransactions.main(MergeTransactions.java:39)
+2022-04-18 20:32:35 INFO  MergeTransactions:76 - import data from transactions4.csv
+2022-04-18 20:32:35 ERROR MergeTransactions:99 - file transactions4.csv does not exist - skip
+java.io.FileNotFoundException: transactions4.csv (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at nz.ac.vuw.swen301.tuts.log4j.MergeTransactions.readData(MergeTransactions.java:79)
+	at nz.ac.vuw.swen301.tuts.log4j.MergeTransactions.main(MergeTransactions.java:40)
+2022-04-18 20:32:35 INFO  MergeTransactions:47 - 8 transactions imported
+2022-04-18 20:32:35 INFO  MergeTransactions:48 - total value: $840.00
+2022-04-18 20:32:35 INFO  MergeTransactions:49 - max value: $240.00
